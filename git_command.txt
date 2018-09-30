@@ -21,3 +21,12 @@ git add .
 לבדוק שינויים 
 git log
 git status
+
+branches
+
+git log --online בודק לוגים
+git branch (name of feature) - (יוצר brach חדש)
+git branch -a (מראה את כל נתיבי הbarnches)
+git checkout (name of feature) (עובר לbrach)
+git branch -D (name of feature) (מוחק את הbrach מהmaster)
+git branch -D (name of feature) (מוחק את הbrach מהbrach)
