@@ -19,14 +19,19 @@ git add .
 
 
 לבדוק שינויים 
-git log
+git log - לא להשתמש, יותר מידי זמן
 git status
 
 branches
 
-git log --online בודק לוגים
+git log --oneline בודק לוגים בשורה אחת בhead זה השינוי האחרון
 git branch (name of feature) - (יוצר brach חדש)
-git branch -a (מראה את כל נתיבי הbarnches)
+ git push --set-upstream origin (name of feature) (דוחף את הbranch החדש)
+git branch -a (מראה את כל הbarnches)
 git checkout (name of feature) (עובר לbrach)
 git branch -D (name of feature) (מוחק את הbrach מהmaster)
-git branch -D (name of feature) (מוחק את הbrach מהbrach)
+git branch -d (name of feature) (מוחק את הbrach מהbrach)
+git merge (name of feature) (מעלה את הbranch לmaster)
+git push https://github.com/agt-platform/FullMoon.git --delete (name of feature) (מוחק את הbranch מהשרת של github)
+
+
