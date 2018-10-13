@@ -1,0 +1,22 @@
+
+/*beackground image */
+.bg { 
+	background-image: url("../../assets/images/banner.jpg");
+	height: 632px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slider-info h6{
+    font-size: 30px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #fff;
+}
+ h6{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+ }
+
