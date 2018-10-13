@@ -1,0 +1,37 @@
+לרשום גיט לפני כל מילה
+cd .. לחזור אחורה
+ls להסתכל על התקייה הנוכחית
+pwd לראות את הנתיב
+cd והשם של התקייה
+
+למשוך קבצים:
+1. להגיע לתיקיית FamilyBox
+2. לכתוב git pull origin master
+3. אם עושה בעיות, לכתוב git pull
+
+להכניס קובץ שעבדת עליו:
+להגיע לתיקייה FamilyBox
+לכתוב: git add fileName.html
+לכתוב: git commit -m "notification"
+לכתוב: git push git
+git add -a
+git add .
+
+
+לבדוק שינויים 
+git log - לא להשתמש, יותר מידי זמן
+git status
+
+branches
+
+git log --oneline בודק לוגים בשורה אחת בhead זה השינוי האחרון
+git branch (name of feature) - (יוצר brach חדש)
+ git push --set-upstream origin (name of feature) (דוחף את הbranch החדש)
+git branch -a (מראה את כל הbarnches)
+git checkout (name of feature) (עובר לbrach)
+git branch -D (name of feature) (מוחק את הbrach מהmaster)
+git branch -d (name of feature) (מוחק את הbrach מהbrach)
+git merge (name of feature) (מעלה את הbranch לmaster)
+git push https://github.com/agt-platform/FullMoon.git --delete (name of feature) (מוחק את הbranch מהשרת של github)
+
+
