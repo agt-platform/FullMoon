@@ -21,7 +21,8 @@ export class NavbarComponent implements OnInit {
 
      $(document).ready(function() {
       $(".menu-icon").on("click", function() {
-        $("ul.navi").toggleClass(".showing");
+        
+        $(".navi").toggleClass("showing");
       });
 });
 

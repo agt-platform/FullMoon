@@ -9,7 +9,7 @@
     letter-spacing: 2px;
     border:1px solid white;
 }
-ul.navi {
+.navi {
     line-height: 60px;
     list-style: none;
     background: rgba(0, 0, 0, 0);
@@ -23,7 +23,7 @@ ul.navi {
     border:1px solid white;
     
 }
-nav.black ul {
+.black {
     background: #000;
 }
  li.word {
