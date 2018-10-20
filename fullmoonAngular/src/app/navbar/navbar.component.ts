@@ -11,18 +11,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
-    $(document).ready(function(){
-      $('#btn1').click(function(){
-        alert('button is clicked');
-      })
-    });
-
      // Menu-toggle button
 
      $(document).ready(function() {
       $(".menu-icon").on("click", function() {
-        
-        $(".navi").toggleClass("showing");
+        console.log('scsc');
+        $("ul").toggleClass("showing");
+
       });
 });
 
