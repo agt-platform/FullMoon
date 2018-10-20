@@ -1,5 +1,8 @@
 
 /*beackground image */
+.row{
+    height: 100%;
+}
 .bg { 
 	background-image: url("../../assets/images/banner.jpg");
 	height: 632px;
@@ -10,13 +13,14 @@
 
 .slider-info h6{
     font-size: 30px;
+    height: 632px;
     line-height: 1.6;
     letter-spacing: 3px;
     font-weight: 400;
     color: #fff;
 }
  h6{
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
  }
 
