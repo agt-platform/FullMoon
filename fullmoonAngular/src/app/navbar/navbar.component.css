@@ -1,32 +1,143 @@
-.a_nav{
-	color:white;
-	width: 180px;
-	text-align:center;
-	
+.logo {
+    line-height: 60px;
+    margin: 16px;
+    width: 10%;
+    text-align: right;
+    color: #fff;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
 }
-#myNavbar{
-    margin: 0 auto;
-    text-align: center;
+.navi {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+   
+    
+}
+
+ul.navi {
+    ma: 30px;
+}
+
+
+.black {
+    background: #000;
+}
+
+ li.word {
+    display: inline-block;
+    padding: 16px 40px;
+    text-align: right;
+}
+
+ a.wordText {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    
+    
+}
+
+/*Neon*/
+  
+  li a:hover {
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
  
-}
-#allNav{
-    background-color:grey;
-    border-radius: 0px;
-    text-align: center;
-}
+  /*glow for webkit*/
+  
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+  }
+  
+  
+  /*glow for mozilla*/
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+  }
+  
+  /*glow*/
+  
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+  }
+  
 
-  .navbar li a, .navbar .navbar-brand {
-      color: white; 
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #006dcc !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
 
-.icon-bar{
-	background-color:white;
+@media(max-width: 1100px) {
+
+    .logo {
+        
+          top: 0;
+          margin-top: 16px;
+    }
+
+    ul.navi {
+          max-height: 0px;
+          position: fixed;
+          background-color: #000;
+          overflow: hidden;
+          width: 100%;
+    }
+
+
+    ul.showing {
+          max-height: 34em;
+          width: 100%;
+          background-color: #000;
+          position: fixed;
+    
+    }
+
+    li.word{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
 }

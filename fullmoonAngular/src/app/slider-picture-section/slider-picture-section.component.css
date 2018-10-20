@@ -4,16 +4,17 @@
     height: 100%;
 }
 .bg { 
-	background-image: url("../../assets/images/banner.jpg");
-	height: 632px;
+    background-image: url("../../assets/images/banner.jpg");
+    margin-top: -100px;
+	height: 701px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .slider-info h6{
-    font-size: 30px;
-    height: 632px;
+    font-size: 3vw;
+    margin-top: 250px;
     line-height: 1.6;
     letter-spacing: 3px;
     font-weight: 400;
@@ -24,3 +25,29 @@
     font-family: 'Montserrat', sans-serif;
  }
 
+ h1{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vw;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #fff;
+ }
+
+ .more-button a{
+    border: solid 2px #FFF;
+    color: #FFF;
+    background: #e709c1;
+    font-size: 1.5em;
+    padding: 8px 25px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.more-button {
+    margin: 7em 0 1em 0;
+}	
+.more-button a:hover{
+    background: black;
+	border: solid 2px #e709c1;
+}
