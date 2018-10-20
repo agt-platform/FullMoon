@@ -18,9 +18,13 @@ git add -a
 git add .
 
 
+
+
 לבדוק שינויים 
 git log - לא להשתמש, יותר מידי זמן
 git status
+
+
 
 branches
 
@@ -35,3 +39,9 @@ git merge (name of feature) (מעלה את הbranch לmaster)
 git push https://github.com/agt-platform/FullMoon.git --delete (name of feature) (מוחק את הbranch מהשרת של github)
 
 
+angular:{
+
+ng g c nav ליצור קומפוננט נאב
+
+
+}
