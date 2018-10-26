@@ -14,17 +14,22 @@
       <hr class="line" >
     </div>
   </div>
-  <div class="container">
+  <div class="container" style="margin-top:6%;">
   <div class="row">
-    <div class="col-md-4 agileits_services_grid" data-aos="fade-right">
+    <div  *ngFor="let event of events" class="col-sm-4 agileits_services_grid" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
       <div class="w3_agile_services_grid1">
-        <img src="../assets/img/g1.jpg" alt=" " class="img-responsive">
+        <img src="{{event.picSrc}}" alt=" " class="img-responsive">
         <div class="w3_blur"></div>
       </div>
-      <h3>SPECIAL PROGRAMS</h3>
-      <p>Enjoy the event throughout the entire night and do not sleep till the morning easy.</p>
+      <h3>{{event.nameOfEvent}}</h3>
+      <p>{{event.descOfEvent}}</p>
+      <div class="w3layouts_more">
+        <a href="#" class="scroll">צור קשר</a>
+      </div>
     </div>
   </div>
   </div>
-
-</div>
+  <div class="p p-1"></div>
+  <div class="p p-2"></div>
+  <div class="p p-3"></div>
+</div> 
