@@ -10,6 +10,28 @@ export class SliderPictureSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var listOfImages = ['../../assets/images/banner.jpg' , '../../assets/images/g1.jpg'];
+    var i = 0;
+			carousel();
+
+			function carousel() {
+        
+        if( i == 0){
+          var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
+            bg[0].style.backgroundImage = "url(" +listOfImages[0] + ")";
+            i++;
+        }
+        else{
+          var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
+            bg[0].style.backgroundImage = "url(" +listOfImages[1] + ")";
+            i--;
+        }
+        
+        setTimeout(carousel, 3000);
+        
+      }
+      
+      
   }
 
 }
