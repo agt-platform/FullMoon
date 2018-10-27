@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
+
      // Menu-toggle button
 
      $(document).ready(function() {
@@ -33,6 +34,9 @@ $(window).on("scroll", function() {
       }
 })
 
+
+
+    
 
   }
 
