@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderPictureSectionComponent } from './slider-picture-section/slider-picture-section.component';
 import { EventsComponent } from './events/events.component';
+import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-rent.component';
 
 
 
@@ -14,6 +15,7 @@ import { EventsComponent } from './events/events.component';
     NavbarComponent,
     SliderPictureSectionComponent,
     EventsComponent,
+    EquipmentForRentComponent,
    
   
     
