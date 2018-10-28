@@ -44,9 +44,12 @@ export class EquipmentForRentComponent implements OnInit {
     status:'fade-down'
   }
   ];
+  
 
+  constructor() {
+    
 
-  constructor() { }
+   }
 
   ngOnInit() {
   }

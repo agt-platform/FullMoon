@@ -142,3 +142,10 @@ h2{
 span.thr{
 	color:#fff;
 }
+
+/* פופאפ לתמונה */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}

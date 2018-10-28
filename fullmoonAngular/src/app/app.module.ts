@@ -9,6 +9,7 @@ import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-re
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
