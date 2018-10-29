@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-equipment-for-rent',
   templateUrl: './equipment-for-rent.component.html',
   styleUrls: ['./equipment-for-rent.component.css']
 })
 export class EquipmentForRentComponent implements OnInit {
+  
   equiqments=[
     {
       nameOfEquiqment:'תותח שלג',
@@ -44,13 +47,14 @@ export class EquipmentForRentComponent implements OnInit {
     status:'fade-down'
   }
   ];
+  doSome(x){
+    alert(this.equiqments[x].nameOfEquiqment);
+  }
+
+ 
+  constructor() {}
+
   
-
-  constructor() {
-    
-
-   }
-
   ngOnInit() {
   }
 
