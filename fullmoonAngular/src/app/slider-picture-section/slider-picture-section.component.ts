@@ -11,7 +11,7 @@ export class SliderPictureSectionComponent implements OnInit {
 
   ngOnInit() {
     var listOfImages = ['../../assets/images/banner.jpg' , '../../assets/images/g1.jpg'];
-    var i = 0;
+   var i = 0;
 			carousel();
 
 			function carousel() {
@@ -23,14 +23,14 @@ export class SliderPictureSectionComponent implements OnInit {
         }
         else{
           var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
+          bg[0].style.left = parseInt(bg[0].style.left) + 10 + 'px';
             bg[0].style.backgroundImage = "url(" +listOfImages[1] + ")";
             i--;
         }
         
-        setTimeout(carousel, 3000);
+        setTimeout(carousel, 5000);
         
       }
-      
       
   }
 

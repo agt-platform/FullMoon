@@ -9,7 +9,8 @@
 	height: 701px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    left: 0px;
 }
 
 .slider-info h6{
