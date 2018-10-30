@@ -32,7 +32,6 @@ export class SliderPictureSectionComponent  implements OnInit {
         }
         else{
           var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
-          bg[0].style.left = parseInt(bg[0].style.left) + 10 + 'px';
             bg[0].style.backgroundImage = "url(" +listOfImages[1] + ")";
             i--;
         }

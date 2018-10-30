@@ -4,6 +4,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderPictureSectionComponent } from './slider-picture-section/slider-picture-section.component';
+import { CustomersComponent } from './customers/customers.component';
 
 
 
@@ -12,6 +13,7 @@ import { SliderPictureSectionComponent } from './slider-picture-section/slider-p
     AppComponent,
     NavbarComponent,
     SliderPictureSectionComponent,
+    CustomersComponent,
    
   
     
