@@ -4,7 +4,6 @@
     height: 100%;
 }
 .bg { 
-    background-image: url("../../assets/images/banner.jpg");
     margin-top: -100px;
 	height: 701px;
 	background-position: center;

@@ -1,16 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../http-client.service';
+
+
 
 @Component({
   selector: 'app-slider-picture-section',
   templateUrl: './slider-picture-section.component.html',
   styleUrls: ['./slider-picture-section.component.css']
 })
-export class SliderPictureSectionComponent implements OnInit {
+export class SliderPictureSectionComponent  implements OnInit {
+  sliderArray: string[];
+  constructor(private data: DataService) {
+   }
 
-  constructor() { }
+   
+   
+   
 
   ngOnInit() {
-    var listOfImages = ['../../assets/images/banner.jpg' , '../../assets/images/g1.jpg'];
+    
+   var listOfImages = ['../../assets/images/banner.jpg' , '../../assets/images/g1.jpg'];
    var i = 0;
 			carousel();
 
@@ -32,6 +41,7 @@ export class SliderPictureSectionComponent implements OnInit {
         
       }
       
-  }
+      
 
+  }
 }
