@@ -47,15 +47,45 @@ export class EquipmentForRentComponent implements OnInit {
     status:'fade-down'
   }
   ];
-  doSome(x){
-    alert(this.equiqments[x].nameOfEquiqment);
+
+
+doSome(x){
+    
+ 
+}
+
+  constructor() {
+
+
+
+
+
   }
 
- 
-  constructor() {}
-
-  
   ngOnInit() {
+ // Get the modal
+ var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+ var modalImg = document.getElementById("img01");
+ var captionText = document.getElementById("caption");
+img.onclick = function(){
+   modal.style.display = "block";
+    modalImg[0].src = this[0].src;
+    captionText[0].innerHTML = this[0].alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span[0].onclick = function() { 
+    modal.style.display = "none";
+}
+ 
+ 
   }
 
 }
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
