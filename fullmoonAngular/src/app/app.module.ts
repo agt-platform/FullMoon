@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SliderPictureSectionComponent } from './slider-picture-section/slider-picture-section.component';
 import { EventsComponent } from './events/events.component';
 import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-rent.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -17,6 +18,7 @@ import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-re
     SliderPictureSectionComponent,
     EventsComponent,
     EquipmentForRentComponent,
+    ContactUsComponent,
    
   
     
