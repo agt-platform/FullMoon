@@ -50,6 +50,7 @@ export class EquipmentForRentComponent implements OnInit {
 
 
 doSome(x){
+  var src= this.equiqments[x].picSrc;
      // Get the modal
  var modal = document.getElementById('myModal');
  var div = document.getElementById(x) ;
@@ -59,7 +60,7 @@ doSome(x){
   var captionText = document.getElementById("caption");
  div.onclick = function(){
     modal.style.display = "block";
-     modalImg.src = img.src;
+     modalImg.src = src;
      captionText.innerHTML = img.alt;
  }
  

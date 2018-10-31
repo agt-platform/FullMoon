@@ -16,12 +16,11 @@
     </div>
 <div class="container" style="margin-top:2%;">
     
-    <div  *ngFor="let equiqment of equiqments ; let x=index" class="col-md-4 ser-1" data-aos="zoom-in" id={{x}}>
+    <div  id="myImg" *ngFor="let equiqment of equiqments ; let x=index" class="col-md-4 ser-1 myImg" data-aos="zoom-in" id={{x}}>
       <div class="grid1" (click)="doSome(x)"> 
         <h4>{{equiqment.nameOfEquiqment}}</h4>
         <p>{{equiqment.descOfEquiqment}} </p>
-        <img  src={{equiqment.picSrc}} style="width:100%;max-width:300px">
-        <p>{{x}}</p>
+  
       </div>
     </div>
 
@@ -31,7 +30,7 @@
 </div>
 </div>
 
-<img id="myImg" src="../assets/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span id="close" class="close">&times;</span>
