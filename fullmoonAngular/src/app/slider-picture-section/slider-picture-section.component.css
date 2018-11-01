@@ -3,7 +3,7 @@
 .row{
     height: 100%;
 }
-.bgg { 
+.bg { 
     background-image: url("../../assets/images/banner.jpg");
     margin-top: -100px;
 	height: 701px;
