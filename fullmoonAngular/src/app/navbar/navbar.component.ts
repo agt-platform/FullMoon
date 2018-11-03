@@ -16,23 +16,11 @@ export class NavbarComponent implements OnInit {
 
      $(document).ready(function() {
       $(".menu-icon").on("click", function() {
-        console.log('scsc');
         $("ul").toggleClass("showing");
-
+        $("nav").toggleClass("absolute");
       });
 });
 
-// Scrolling Effect
-
-$(window).on("scroll", function() {
-      if($(window).scrollTop()) {
-            $('.menu-icon').addClass('black');
-      }
-
-      else {
-            $('.menu-icon').removeClass('black');
-      }
-})
 
 
 
