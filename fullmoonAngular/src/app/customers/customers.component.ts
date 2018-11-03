@@ -26,22 +26,30 @@ export class CustomersComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    var myIndex = 0;
-    carousel();
+  ngOnInit(){
+    document.addEventListener("DOMContentLoaded", function(e) {
+    var myIndex = 1;
+    
+    slider();
 
-function carousel() {
-    var i;
-    var x = <HTMLElement[]><any>document.querySelectorAll(".slider-customers")
-    console.log(x[0].style);
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+    function slider() {
+        var i;
+        var x = document.getElementsByClassName("slider-customers") as HTMLCollectionOf<HTMLElement>;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) 
+        {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";  
+      
+        setTimeout(slider, 5000); 
     }
-    myIndex++;
-    /*if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds*/
-}
+  });
   }
 
 }
+
+

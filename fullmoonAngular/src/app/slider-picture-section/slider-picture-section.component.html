@@ -1,6 +1,5 @@
-<div class="bg">
     <div class="h-100 row align-items-center text-center" >
-        <div class="slider-info" data-aos="fade-up-left">
+        <div class="slider-info" data-aos="zoom-in">
             <h6>סמיילי הפקות מציגים</h6>
             <h1>מסיבת פולמון שתמיד חלמת</h1>
 
@@ -9,4 +8,6 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="bg w3-animate-left"  *ngFor="let bgImages of listOfImages" [style.backgroundImage]="'url('+ bgImages.bgImage +')'">
+    </div>
+     

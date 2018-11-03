@@ -10,6 +10,16 @@ import { DataService } from '../http-client.service';
 })
 export class SliderPictureSectionComponent  implements OnInit {
   sliderArray: string[];
+  listOfImages = 
+                  [
+                    {
+                      bgImage : '../../assets/images/banner.jpg'
+                    },
+                    {
+                      bgImage : '../../assets/images/g1.jpg'
+                    }
+                     
+                  ];
   constructor(private data: DataService) {
    }
 
@@ -18,27 +28,28 @@ export class SliderPictureSectionComponent  implements OnInit {
    
 
   ngOnInit() {
-    
-   var listOfImages = ['../../assets/images/banner.jpg' , '../../assets/images/g1.jpg'];
-   var i = 0;
-			carousel();
-
-			function carousel() {
+    document.addEventListener("DOMContentLoaded", function(e) {
+      var myIndex = 1;
+      
+      carousel1();
+  
+      function carousel1() {
+          var i;
+          var bg = document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
+          
+          for (i = 0; i < bg.length; i++) {
+            bg[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > bg.length) 
+          {
+            myIndex = 1;
+          }
+          bg[myIndex - 1].style.display = "block";  
         
-        if( i == 0){
-          var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
-            bg[0].style.backgroundImage = "url(" +listOfImages[0] + ")";
-            i++;
-        }
-        else{
-          var bg =  document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
-            bg[0].style.backgroundImage = "url(" +listOfImages[1] + ")";
-            i--;
-        }
-        
-        setTimeout(carousel, 5000);
-        
+          setTimeout(carousel1, 5000); 
       }
+    });
       
       
 
