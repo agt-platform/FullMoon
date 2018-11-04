@@ -7,6 +7,7 @@ import { SliderPictureSectionComponent } from './slider-picture-section/slider-p
 import { EventsComponent } from './events/events.component';
 import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-rent.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -25,7 +26,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
