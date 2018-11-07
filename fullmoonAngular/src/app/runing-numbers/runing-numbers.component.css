@@ -68,6 +68,8 @@ p {
     text-decoration: none;
 }
 
-.col-md-4{
-    padding-top: 20px;
+@media(max-width: 987px) {
+    .col-md-4{
+        padding: 64px;
+    }
 }
