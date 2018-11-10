@@ -9,6 +9,7 @@ import { EventsComponent } from './events/events.component';
 import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-rent.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CustomersComponent } from './customers/customers.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -21,6 +22,7 @@ import { CustomersComponent } from './customers/customers.component';
     EventsComponent,
     EquipmentForRentComponent,
     CustomersComponent,
+    AboutUsComponent,
 
    
   
