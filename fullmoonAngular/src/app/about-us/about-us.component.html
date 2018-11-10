@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row align-items-center text-center" >
+    <div class="col-md-12">
+        <h3 class="heading-agileinfo" data-aos="zoom-in">עלינו
+          <span class="thr">מה הופך מסיבה למסיבת השנה </span></h3>
+      </div>
+  </div>
+  <div calss="row">
+      <div class="col-md-4" data-aos="fade-right"  *ngFor="let i of us">
+            <img src="{{i.picSrc}}" alt=" " class="img-responsive" >
+          <div class="pr-ta" style="text-align: center">
+            <h3>{{i.title}}</h3>
+            <p>{{i.des}}</p>
+            <a href="#book" class="scroll">צור קשר</a>
+          </div>
+        </div>
+   </div>
+</div><br>

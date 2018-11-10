@@ -1,0 +1,76 @@
+.heading-agileinfo {
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 40px;
+    margin-bottom: 1.9em;
+    text-align: center;
+    color: #e709c1;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-agileinfo span {
+    display: block;
+    font-size: 15px!important;
+    margin-top: 1em;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 500;
+}
+
+.heading-agileinfo span:after {
+    content: '';
+    background: #e709c1;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 132%;
+    right: 47.5%
+}
+
+.pr-ta {
+    background: #1c113f;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e709c1;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #999;
+    line-height: 2em;
+    margin: 1em 0;
+}
+
+.scroll {
+    display: inline-block;
+    background: #e709c1;
+    padding: 6px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media(max-width: 993px) {
+    .col-md-4{
+        padding: 64px;
+    }
+}
