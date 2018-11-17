@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {Observable} from 'rxjs/Observable';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -10,6 +10,11 @@ import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-re
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CustomersComponent } from './customers/customers.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GalleryComponent } from './gallery/gallery.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 
 
@@ -23,6 +28,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     EquipmentForRentComponent,
     CustomersComponent,
     AboutUsComponent,
+    GalleryComponent,
+    HomeComponent,
 
    
   
@@ -31,7 +38,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
 
   ],
   providers: [HttpClientModule],
