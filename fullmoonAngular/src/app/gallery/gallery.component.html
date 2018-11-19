@@ -1,14 +1,16 @@
 <div class="container" id="gallery">
-  <div class="row align-items-center text-center" >
-    <div class="col-md-12">
-        <h3 class="heading-agileinfo">גלריה
-          <span class="thr">תמונה אחת שווה אלף מילים</span></h3>
-      </div>
-  </div>
-  <div calss="row align-items-center text-center">
-      <div class="col-md-12 align-items-center text-center"  *ngFor="let i of gallery">
-            <img src="{{i.picSrc}}" alt=" " class="img-responsive" >
-            <button class="button" (click)="left()">left</button>
+    <div class="row align-items-center text-center">
+        <div class="col-md-12">
+            <h3 class="heading-agileinfo">גלריה
+                <span class="thr">תמונה אחת שווה אלף מילים</span></h3>
         </div>
-   </div>
-</div><br>
+    </div>
+    <div calss="row align-items-center text-center">
+        <div class="col-md-12 align-items-center text-center" *ngFor="let i of gallery">
+            <img src="{{i.picSrc}}" alt=" " class="img-responsive">
+
+        </div>
+        <span class="glyphicon glyphicon-chevron-left" (click)="left()"  aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-chevron-right" (click)="right()"  aria-hidden="true"></span>
+    </div>
+</div>

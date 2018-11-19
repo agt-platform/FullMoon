@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  
+  isLeft : boolean= false;
+  length = 0;
   gallery=[
     {
       picSrc:'../../assets/images/g1.jpg'
@@ -31,16 +32,42 @@ export class GalleryComponent implements OnInit {
 
    
   ];
+  
   left(){
-       
+    var i;
+    var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    if(this.length == x.length - 1){
+      this.length = 0;
+    }
+    else{
+      this.length++;
+    }
+    x[this.length].style.display = "block";  
+  } 
+
+  right(){
+    var i;
+    var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    if(this.length ==  0){
+      this.length = 4;
+    }
+    else{
+      this.length--;
+    }
+    x[this.length].style.display = "block";  
   } 
   constructor() { 
 
   }
   ngOnInit(){
+    
     document.addEventListener("DOMContentLoaded", function(e) {
-    var myIndex = 1;
-    var left = 0;
     slider();
 
     function slider() {
@@ -49,13 +76,11 @@ export class GalleryComponent implements OnInit {
         var button = document.getElementsByClassName("button") as HTMLCollectionOf<HTMLElement>;
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none"; 
-          button[i].style.display = "none"; 
+          
         }
-        x[myIndex - 1].style.display = "block";  
-        button[myIndex - 1].style.display = "block";  
+        x[0].style.display = "block";  
     }
   
-    
   });
 
   
