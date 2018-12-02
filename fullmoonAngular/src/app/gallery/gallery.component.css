@@ -81,5 +81,11 @@ p {
 .glyphicon-chevron-right{
    float: right;
 }
+.gallery{
+    display: none;
+}
 
+.gallery:first-child { 
+    display: block;
+}
 

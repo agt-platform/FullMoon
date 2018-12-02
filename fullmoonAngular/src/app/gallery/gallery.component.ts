@@ -38,6 +38,7 @@ export class GalleryComponent implements OnInit {
     var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
+      x[i].parentElement.classList.remove("gallery");
     }
     if(this.length == x.length - 1){
       this.length = 0;
@@ -51,8 +52,10 @@ export class GalleryComponent implements OnInit {
   right(){
     var i;
     var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
+    
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
+      x[i].parentElement.classList.remove("gallery");
     }
     if(this.length ==  0){
       this.length = 4;
@@ -67,21 +70,22 @@ export class GalleryComponent implements OnInit {
   }
   ngOnInit(){
     
-    document.addEventListener("DOMContentLoaded", function(e) {
-    slider();
+  //   document.addEventListener("DOMContentLoaded", function(e) {
+    
 
-    function slider() {
-        var i;
-        var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
-        var button = document.getElementsByClassName("button") as HTMLCollectionOf<HTMLElement>;
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
+  //   function slider() {
+  //       var i;
+  //       var x = document.getElementsByClassName("img-responsive") as HTMLCollectionOf<HTMLElement>;
+  //       var button = document.getElementsByClassName("button") as HTMLCollectionOf<HTMLElement>;
+  //       for (i = 0; i < x.length; i++) {
+  //         x[i].style.display = "none"; 
           
-        }
-        x[0].style.display = "block";  
-    }
-  
-  });
+  //       }
+  //       x[0].style.display = "block";  
+  //   }
+
+  //   slider();
+  // });
 
   
   
