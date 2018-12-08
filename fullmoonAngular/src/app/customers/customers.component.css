@@ -88,3 +88,17 @@ p.para-w3-agile {
 p {
     margin: 0;
 }
+
+.smallSqure2{
+    background-color: #e709c1;
+    width: 1em;
+    height: 1em;
+    z-index: 99;
+    margin-left: 0 auto;
+    display: inline-block;
+    margin:10px;
+}
+
+.activesmallSqure2{
+    background-color: white;
+}

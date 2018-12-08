@@ -36,16 +36,19 @@ export class SliderPictureSectionComponent  implements OnInit {
       function carousel1() {
           var i;
           var bg = document.getElementsByClassName("bg") as HTMLCollectionOf<HTMLElement>;
+          var smallSquere = document.getElementsByClassName("smallSqure") as HTMLCollectionOf<HTMLElement>;
           
           for (i = 0; i < bg.length; i++) {
-            bg[i].style.display = "none";  
+            bg[i].style.display = "none";
+            smallSquere[i].classList.remove("activesmallSqure");  
           }
           myIndex++;
           if (myIndex > bg.length) 
           {
             myIndex = 1;
           }
-          bg[myIndex - 1].style.display = "block";  
+          bg[myIndex - 1].style.display = "block";
+          smallSquere[myIndex - 1].classList.add("activesmallSqure"); 
         
           setTimeout(carousel1, 5000); 
       }

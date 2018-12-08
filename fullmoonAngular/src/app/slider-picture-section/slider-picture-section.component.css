@@ -6,7 +6,7 @@
 .bg { 
     z-index:-1;
     margin-top: -720px;
-	height: 850px;
+	height: 750px;
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
@@ -46,10 +46,24 @@
     letter-spacing: 1px;
 }
 .more-button {
-    margin: 7em 0 1em 0;
+    margin: 5em 0 1em 0;
 }	
 .more-button a:hover{
     background: black;
 	border: solid 2px #e709c1;
+}
+
+.smallSqure{
+    background-color: #e709c1;
+    width: 1em;
+    height: 1em;
+    z-index: 99;
+    margin-left: 0 auto;
+    display: inline-block;
+    margin:10px;
+}
+
+.activesmallSqure{
+    background-color: white;
 }
 

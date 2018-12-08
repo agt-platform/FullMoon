@@ -50,18 +50,18 @@ export class EquipmentForRentComponent implements OnInit {
 
 
 doSome(x){
-  var src= this.equiqments[x].picSrc;
+  var src= this.equiqments[x];
      // Get the modal
  var modal = document.getElementById('myModal');
  var div = document.getElementById(x) ;
  // Get the image and insert it inside the modal - use its "alt" text as a caption
- var img = div.getElementsByTagName('img')[0];
+ //var img = div.getElementsByTagName('img')[0];
   var modalImg = document.getElementById("img01") as HTMLImageElement;
   var captionText = document.getElementById("caption");
  div.onclick = function(){
     modal.style.display = "block";
-     modalImg.src = src;
-     captionText.innerHTML = img.alt;
+     modalImg.src = src.picSrc;
+     captionText.innerHTML = src.nameOfEquiqment;
  }
  
  // Get the <span> element that closes the modal
