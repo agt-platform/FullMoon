@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AlbumComponent } from './album/album.component';
+import { PhotosComponent } from './photos/photos.component';
 
 
 
@@ -32,6 +34,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GalleryComponent,
     HomeComponent,
     ContactUsComponent,
+    AlbumComponent,
+    PhotosComponent,
 
    
   

@@ -7,10 +7,13 @@ import { EquipmentForRentComponent } from './equipment-for-rent/equipment-for-re
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CustomersComponent } from './customers/customers.component';
 import { HomeComponent } from './home/home.component';
- 
+import { AlbumComponent } from './album/album.component';
+import { PhotosComponent } from './photos/photos.component';
 const routes: Routes = [
     { path: '', component: HomeComponent},
-    { path: 'gallery', component: GalleryComponent  }
+    { path: 'gallery', component: GalleryComponent  },
+    { path: 'album', component: AlbumComponent  },
+    { path: 'photos', component: PhotosComponent  }
 ];
  
 @NgModule({

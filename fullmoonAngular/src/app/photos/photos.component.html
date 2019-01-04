@@ -1,0 +1,22 @@
+<div class="container" id="gallery">
+    <div class="row align-items-center text-center">
+        <div class="col-md-12">
+            <h3 class="heading-agileinfo">תמונות
+                <span class="thr">תמונה אחת שווה אלף מילים</span></h3>
+        </div>
+    </div>
+ 
+  
+  <div class="row  align-items-center  text-center centered-text pagination-centered" >
+    <div class="card col-md-3 " style="text-align: center; align-self: center; cursor: pointer; color:black;" *ngFor="let pic of photos ; let x=index">
+        <h5 class="card-title">{{pic.id}}</h5>
+      <img class="card-img-top" src="{{pic.picSrc}}" alt="Card image cap" width="90%">
+      <div class="card-body">
+      
+        
+       
+      </div>
+    </div>
+
+
+  </div>
