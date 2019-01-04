@@ -26,7 +26,11 @@ export class AlbumComponent implements OnInit {
     description:'בר מצווה באולמי פאר'
   }
 ]
-
+doSome(x){
+  //לשנות לכתובת של השרת כשמעלים
+  window.location.assign("http://localhost:4200/photos")
+ }
+ 
   constructor() { }
 
   ngOnInit() {

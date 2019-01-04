@@ -1,14 +1,14 @@
 <div class="container" id="gallery">
     <div class="row align-items-center text-center">
         <div class="col-md-12">
-            <h3 class="heading-agileinfo">גלריה
-                <span class="thr">תמונה אחת שווה אלף מילים</span></h3>
+            <h3 class="heading-agileinfo">גלריית אלבומים
+                <span class="thr">אלבומים מאירועים</span></h3>
         </div>
     </div>
  
   
   <div class="row  align-items-center  text-center centered-text pagination-centered" >
-    <div class="card col-md-3 " style="text-align: center; align-self: center; cursor: pointer; color:black;" *ngFor="let pic of album ; let x=index">
+    <div class="card col-md-3 " style="text-align: center; align-self: center; cursor: pointer; color:black;" *ngFor="let pic of album ; let x=index" (click)="doSome(x)">
       <img class="card-img-top" src="{{pic.picSrc}}" alt="Card image cap" width="90%">
       <div class="card-body">
         <h5 class="card-title">{{pic.albumName}}</h5>
