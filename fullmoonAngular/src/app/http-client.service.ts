@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http'
 
 
 const URL = '../assets/images.json';
+const test = './test'
+
 @Injectable({
  providedIn: 'root'
 })
@@ -13,6 +15,10 @@ export class DataService {
 
  getData() {
    return this.http.get(URL);
+ }
+
+ getTest(){
+  return this.http.get(test);
  }
 
 }

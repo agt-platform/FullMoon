@@ -16,10 +16,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,16 +28,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GalleryComponent,
     HomeComponent,
     ContactUsComponent,
-
-   
-  
-    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule.withServerTransition({ appId: 'fullmoon-angular' })
 
   ],
   providers: [HttpClientModule],
