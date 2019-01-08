@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,11 +29,13 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GalleryComponent,
     HomeComponent,
     ContactUsComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     BrowserModule.withServerTransition({ appId: 'fullmoon-angular' })
 
   ],
