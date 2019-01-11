@@ -29,7 +29,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   async addUser(){
-    await this.httpClient.post('http://localhost:3000/user' ,this.user)
+    await this.httpClient.post('http://localhost:3000/user' ,this.user, {responseType: 'text'})
     .subscribe(user => {
       console.log(user)
    })
