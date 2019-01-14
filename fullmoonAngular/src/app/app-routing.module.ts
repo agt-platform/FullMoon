@@ -9,11 +9,13 @@ import { CustomersComponent } from './customers/customers.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumComponent } from './album/album.component';
 import { PhotosComponent } from './photos/photos.component';
+import { LoginComponent } from './dannyinterface/login/login.component';
 const routes: Routes = [
     { path: '', component: HomeComponent},
     { path: 'gallery', component: GalleryComponent  },
     { path: 'album', component: AlbumComponent  },
-    { path: 'photos', component: PhotosComponent  }
+    { path: 'photos', component: PhotosComponent  },
+    { path: 'login', component: LoginComponent  }
 ];
  
 @NgModule({

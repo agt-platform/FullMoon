@@ -16,9 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AlbumComponent } from './album/album.component';
 import { PhotosComponent } from './photos/photos.component';
-
-
-
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './dannyinterface/login/login.component';
 
 
 
@@ -36,16 +35,17 @@ import { PhotosComponent } from './photos/photos.component';
     ContactUsComponent,
     AlbumComponent,
     PhotosComponent,
+    LoginComponent,
 
    
-  
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserModule.withServerTransition({ appId: 'fullmoon-angular' })
 
   ],
   providers: [HttpClientModule],

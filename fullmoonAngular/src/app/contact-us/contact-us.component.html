@@ -15,21 +15,25 @@
         <hr class="line" >
       </div>
     <div class="book-appointment" data-aos="zoom-in">
-      <form action="mailto:giladberg@gmail.com" method="post">
+      <form (submit)="addUser()">
         <div class="gaps">
           <p></p>
-          <input type="text" name="Name" placeholder="שם" required="" class="textStyle" />
+          <input type="text" name="name" placeholder="שם" required="" class="textStyle" 
+          [(ngModel)]= "user.name" />
         </div>
         <div class="gaps">
           <p></p>
-          <input type="email" name="email" placeholder="מייל" required="" class="textStyle" />
+          <input type="email" name="email" placeholder="מייל" required="" class="textStyle" 
+          [(ngModel)]= "user.email"/>
         </div>
         <div class="gaps">
           <p></p>
-          <input type="text" name="Phone Number" placeholder="פלאפון" required="" class="textStyle" />
+          <input type="text" name="phone" placeholder="פלאפון" required="" class="textStyle" 
+          [(ngModel)]= "user.phone"/>
         </div>
         <div class="gaps">
-          <textarea name="Message" placeholder="..הודעה" required="" class="textStyle"></textarea>
+          <textarea name="message" placeholder="..הודעה" required="" class="textStyle"
+          [(ngModel)]= "user.message"></textarea>
         </div>
         <input type="submit" value="שלח">
       </form>
